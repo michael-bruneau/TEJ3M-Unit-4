@@ -8,7 +8,7 @@
                     <mxGeometry x="-200" y="340" width="110" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 11px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;Single LED with Switch and Transistor&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); font-size: 11px; text-align: left;&quot;&gt;A| Output&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); font-size: 11px; text-align: left;&quot;&gt;-------------&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); font-size: 11px; text-align: left;&quot;&gt;0|0&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); font-size: 11px; text-align: left;&quot;&gt;1|1&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-200" y="440" width="210" height="80" as="geometry"/>
+                    <mxGeometry x="-250" y="430" width="210" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.miscellaneous.batteryStack;rotation=-90;" vertex="1" parent="1">
                     <mxGeometry x="570" y="560" width="100" height="60" as="geometry"/>
