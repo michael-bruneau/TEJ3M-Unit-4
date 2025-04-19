@@ -78,7 +78,7 @@
                     <mxGeometry x="300" y="250" width="110" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="35" value="Single LED with Switch&lt;div&gt;A| Output&lt;/div&gt;&lt;div&gt;-------------&lt;/div&gt;&lt;div&gt;0|0&lt;/div&gt;&lt;div&gt;1|1&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-                    <mxGeometry x="70" y="270" width="140" height="80" as="geometry"/>
+                    <mxGeometry x="75" y="270" width="140" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="38" style="shape=connector;rounded=0;html=1;exitX=0;exitY=0.57;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.019;entryY=0.512;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="6" target="18">
                     <mxGeometry relative="1" as="geometry">
