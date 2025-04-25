@@ -168,8 +168,7 @@
                 <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="55" target="14">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="610" y="200"/>
-                            <mxPoint x="610" y="250"/>
+                            <mxPoint x="620" y="200"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
