@@ -154,7 +154,6 @@ void loop() {
             }
         }
 
-
         } else if (failChecker == 1){
             Serial.print("\n");
             Serial.println("Somthing went wrong. Your input was invalid please try again.");
