@@ -137,7 +137,7 @@ void loop() {
                         digitalWrite(PIN_12, ZERO);
                         delay(PAUSE_TIME);
                     }
-                } else if (failChecker == 1){
+                } else if (failChecker == 1) {
                     Serial.print("\n");
                     Serial.println("Somthing went wrong. Your input was invalid please try again.");
                     // Resets loop variables if user input was invalid
