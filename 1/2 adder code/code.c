@@ -49,8 +49,6 @@ void loop() {
         //Gets user input
   	    userInputA = Serial.parseInt();
     
-        Serial.println(userInputA);
-    
         decimalChecker += 1;
         userInputChecker = 1;
     
@@ -94,8 +92,6 @@ void loop() {
   	
                 //Gets user input
   	            userInputB = Serial.parseInt();
-    
-                Serial.println(userInputA);
     
                 decimalChecker += 1;
                 userInputChecker = 1;
