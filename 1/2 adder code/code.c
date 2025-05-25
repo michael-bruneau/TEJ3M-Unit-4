@@ -16,7 +16,7 @@ int textDiplayCount = 0;
 int userInputA = 0;
 int userInputB = 0;
 int decimalChecker = 0; // If decimal checker equals 4 or greater user inputed a decimal
-int passChecker = -1; // Pass counter must equal one to be valid number
+int passChecker = -1; // Pass counter must equal one to be valid number for A and two for B
 int userInputChecker = 0;
 int failChecker = 0;
 
@@ -74,11 +74,11 @@ void loop() {
   	    if ((passChecker == 1) && (failChecker == 0)) {
             // Resets loop variables 
   	        decimalChecker = -1;
-            passChecker = -1;
+            passChecker = 0;
             textDiplayCount = 0;
             userInputChecker = 0;
       
-        while(passChecker >= -1) {
+        while(passChecker >= 0) {
             if (textDiplayCount == 0) {
                 Serial.print("\n");
                 Serial.println("Please input the B value in the equation A ");
@@ -117,7 +117,7 @@ void loop() {
             }
 
             if (decimalChecker >= 3) {
-  	            if ((passChecker == 1) && (failChecker == 0)) {
+  	            if ((passChecker == 2) && (failChecker == 0)) {
                     if (userInputA == 1) {
                         digitalWrite(PIN_10, ONE);
                         delay(PAUSE_TIME);
@@ -137,12 +137,19 @@ void loop() {
                         digitalWrite(PIN_12, ZERO);
                         delay(PAUSE_TIME);
                     }
+
+                    // Resets loop 
+  	                decimalChecker = 0;
+                    passChecker = -1;
+                    textDiplayCount = 0;
+                    userInputChecker = 0;
+
                 } else if (failChecker == 1) {
                     Serial.print("\n");
                     Serial.println("Somthing went wrong. Your input was invalid please try again.");
                     // Resets loop variables if user input was invalid
   	                decimalChecker = 0;
-                    passChecker = -1;
+                    passChecker = 0;
                     textDiplayCount = 0;
                     userInputChecker = 0;
                 }
