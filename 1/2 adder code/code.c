@@ -79,7 +79,7 @@ void loop() {
             userInputChecker = 0;
       
         void loop {
-            if (textDiplayCount == 0){
+            if (textDiplayCount == 0) {
                 Serial.print("\n");
                 Serial.println("Please input the A value in the equation A ");
                 Serial.print(userInputA);
@@ -147,13 +147,11 @@ void loop() {
                     userInputChecker = 0;
                 }
             }	
-  
             // resets decimal checker if user ddin't make an input
             if (userInputChecker == 0) {
                 decimalChecker = 0;
             }
         }
-
         } else if (failChecker == 1){
             Serial.print("\n");
             Serial.println("Somthing went wrong. Your input was invalid please try again.");
