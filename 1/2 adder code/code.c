@@ -81,9 +81,9 @@ void loop() {
         loop(); {
             if (textDiplayCount == 0) {
                 Serial.print("\n");
-                Serial.println("Please input the A value in the equation A ");
+                Serial.println("Please input the B value in the equation A ");
                 Serial.print(userInputA);
-                Serial.print(" + B \nnote A must integer between 1 and 0");
+                Serial.print(" + B \nnote B must integer between 1 and 0");
                 textDiplayCount += 1;
             }
 
