@@ -33,69 +33,75 @@ void setup() {
 }
 
 void loop() {
-  // Prompts User to select a values
-  if (textDiplayCount == 0){
-  	Serial.print("\n");
-  	Serial.println("Please input the A value in the equation A + B \nnote A must integer between 1 and 0");
+    // Prompts User to select a values
+    if (textDiplayCount == 0){
+  	    Serial.print("\n");
+  	    Serial.println("Please input the A value in the equation A + B \nnote A must integer between 1 and 0");
     
-    textDiplayCount += 1;
-  }
+        textDiplayCount += 1;
+    }
   
-  decimalChecker += 1;
-  
-  // Read only if user has made a input
-  if (Serial.available() > 0) {
-  	
-    //Gets user input
-  	userInputA = Serial.parseInt();
-    
-    Serial.println(userInputA);
-    
     decimalChecker += 1;
-    userInputChecker = 1;
+  
+    // Read only if user has made a input
+    if (Serial.available() > 0) {
+  	
+        //Gets user input
+  	    userInputA = Serial.parseInt();
     
-    // checks if user input was valid number
-    if ((userInputA < 2) && (userInputA > -1)) {
-      passChecker += 1; 
-    } else {
-  	  failChecker = 1;
-    }
+        Serial.println(userInputA);
     
-    // checks if number was decimal
-    if (decimalChecker < 4) {
-      passChecker += 1;
-    } else {
-      passChecker = 5;
-      failChecker = 1;
+        decimalChecker += 1;
+        userInputChecker = 1;
+    
+        // checks if user input was valid number
+        if ((userInputA < 2) && (userInputA > -1)) {
+            passChecker += 1; 
+        } else {
+  	        failChecker = 1;
+        }
+    
+        // checks if number was decimal
+        if (decimalChecker < 4) {
+            passChecker += 1;
+        } else {
+            passChecker = 5;
+            failChecker = 1;
+        }
     }
-  }
  
-  if (decimalChecker >= 3) {
-  	if ((passChecker == 1) && (failChecker == 0)) {
-      // Resets loop variables if user input was invalid
-  	  decimalChecker = -1;
-      passChecker = -1;
-      textDiplayCount = 0;
-      userInputChecker = 0;
-      Serial.println("hi");
-    } else if (failChecker == 1){
-      Serial.print("\n");
-      Serial.println("Somthing went wrong. Your input was invalid please try again.");
-      // Resets loop variables if user input was invalid
-  	  decimalChecker = 0;
-      passChecker = -1;
-      textDiplayCount = 0;
-      userInputChecker = 0;
+    if (decimalChecker >= 3) {
+  	    if ((passChecker == 1) && (failChecker == 0)) {
+            // Resets loop variables 
+  	        decimalChecker = -1;
+            passChecker = -1;
+            textDiplayCount = 0;
+            userInputChecker = 0;
+      
+        void loop {
+            if (textDiplayCount == 0){
+                Serial.print("\n");
+                Serial.println("Please input the A value in the equation A ");
+                Serial.print(userInputA);
+                Serial.print(" + B \nnote A must integer between 1 and 0");
+    
+
+        }
+
+
+        } else if (failChecker == 1){
+            Serial.print("\n");
+            Serial.println("Somthing went wrong. Your input was invalid please try again.");
+            // Resets loop variables if user input was invalid
+  	        decimalChecker = 0;
+            passChecker = -1;
+            textDiplayCount = 0;
+            userInputChecker = 0;
+        }
+    }	
+  
+    // resets decimal checker if user ddin't make an input
+    if (userInputChecker == 0) {
+        decimalChecker = 0;
     }
-  }	
-  
-  // resets decimal checker if user ddin't make an input
-  if (userInputChecker == 0) {
-    decimalChecker = 0;
-  }
-  
-  //digitalWrite(LED_BUILTIN, HIGH);
-  //delay(1000); // Wait for 1000 millisecond(s)
-  //digitalWrite(LED_BUILTIN, LOW);
-  //delay(1000); // Wait for 1000 millisecond(s)
 }
