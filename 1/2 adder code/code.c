@@ -78,7 +78,7 @@ void loop() {
             textDiplayCount = 0;
             userInputChecker = 0;
       
-        while() {
+        loop(); {
             if (textDiplayCount == 0) {
                 Serial.print("\n");
                 Serial.println("Please input the A value in the equation A ");
