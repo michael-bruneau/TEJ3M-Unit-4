@@ -120,22 +120,22 @@ void loop() {
   	            if ((passChecker == 1) && (failChecker == 0)) {
                     if (userInputA == 1) {
                         digitalWrite(PIN_10, ONE);
-                        delay(PAUSE_TIME)
+                        delay(PAUSE_TIME);
                     }
 
                     if (userInputA == 0) {
                         digitalWrite(PIN_10, ZERO);
-                        delay(PAUSE_TIME)
+                        delay(PAUSE_TIME);
                     }
 
                     if (userInputB == 1) {
                         digitalWrite(PIN_12, ONE);
-                        delay(PAUSE_TIME)
+                        delay(PAUSE_TIME);
                     }
 
                     if (userInputB == 0) {
                         digitalWrite(PIN_12, ZERO);
-                        delay(PAUSE_TIME)
+                        delay(PAUSE_TIME);
                     }
                 } else if (failChecker == 1){
                     Serial.print("\n");
