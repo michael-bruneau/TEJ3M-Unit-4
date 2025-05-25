@@ -84,8 +84,74 @@ void loop() {
                 Serial.println("Please input the A value in the equation A ");
                 Serial.print(userInputA);
                 Serial.print(" + B \nnote A must integer between 1 and 0");
-    
+                textDiplayCount += 1;
+            }
 
+            decimalChecker += 1;
+  
+            // Read only if user has made a input
+            if (Serial.available() > 0) {
+  	
+                //Gets user input
+  	            userInputB = Serial.parseInt();
+    
+                Serial.println(userInputA);
+    
+                decimalChecker += 1;
+                userInputChecker = 1;
+    
+                // checks if user input was valid number
+                if ((userInputA < 2) && (userInputA > -1)) {
+                    passChecker += 1; 
+                } else {
+  	                failChecker = 1;
+                }
+    
+                // checks if number was decimal
+                if (decimalChecker < 4) {
+                    passChecker += 1;
+                } else {
+                    passChecker = 5;
+                    failChecker = 1;
+                }
+            }
+
+            if (decimalChecker >= 3) {
+  	            if ((passChecker == 1) && (failChecker == 0)) {
+                    if (userInputA == 1) {
+                        digitalWrite(PIN_10, ONE);
+                        delay(PAUSE_TIME)
+                    }
+
+                    if (userInputA == 0) {
+                        digitalWrite(PIN_10, ZERO);
+                        delay(PAUSE_TIME)
+                    }
+
+                    if (userInputB == 1) {
+                        digitalWrite(PIN_12, ONE);
+                        delay(PAUSE_TIME)
+                    }
+
+                    if (userInputB == 0) {
+                        digitalWrite(PIN_12, ZERO);
+                        delay(PAUSE_TIME)
+                    }
+                } else if (failChecker == 1){
+                    Serial.print("\n");
+                    Serial.println("Somthing went wrong. Your input was invalid please try again.");
+                    // Resets loop variables if user input was invalid
+  	                decimalChecker = 0;
+                    passChecker = -1;
+                    textDiplayCount = 0;
+                    userInputChecker = 0;
+                }
+            }	
+  
+            // resets decimal checker if user ddin't make an input
+            if (userInputChecker == 0) {
+                decimalChecker = 0;
+            }
         }
 
 
