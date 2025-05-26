@@ -150,6 +150,9 @@ void loop() {
                         }
 
                         if (Serial.available() > 0) {
+                            //uses up input
+                            userInputA = parseInt();
+
                             // Resets loop 
   	                        decimalChecker = 0;
                             passChecker = -1;
