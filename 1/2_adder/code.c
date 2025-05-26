@@ -147,6 +147,7 @@ void loop() {
                             
                             Serial.print("\n");
                             Serial.print("\nWhen you are ready type any letter in the serial monitor to start a new calculation.");
+                            Serial.print("\n");
                         }
 
                         if (Serial.available() > 0) {
