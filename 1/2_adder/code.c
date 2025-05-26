@@ -135,13 +135,27 @@ void loop() {
                     }
                     
                     while(passChecker >= 0) {
+                        if (textDiplayCount == 1) {
+                            Serial.print("\n");
+                            Serial.println("The equation you have selected is ");
+                            Serial.print(userInputA);
+                            Serial.print(" + ");
+                            Serial.print(userInputB);
+                            Serial.print(" = ");
+                            Serial.print(userInputA + userInputB);
+                            textDiplayCount += 1;
+
+                            Serial.print("\n");
+                            Serial.print("When you are ready type any letter in the serial monitor to start a new calculation.")
 
                         if (Serial.available() > 0) {
-                        // Resets loop 
-  	                    decimalChecker = 0;
-                        passChecker = -1;
-                        textDiplayCount = 0;
-                        userInputChecker = 0;
+                            // Resets loop 
+  	                        decimalChecker = 0;
+                            passChecker = -1;
+                            textDiplayCount = 0;
+                            userInputChecker = 0;
+                            digitalWrite(PIN_10, LOW)
+                            digitalWrite(PIN_12, LOW)
 
                 } else if (failChecker == 1) {
                     Serial.print("\n");
