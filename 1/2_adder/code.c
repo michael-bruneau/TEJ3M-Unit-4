@@ -133,12 +133,15 @@ void loop() {
                         digitalWrite(PIN_12, ZERO);
                         delay(PAUSE_TIME);
                     }
+                    
+                    while(passChecker >= 0) {
 
-                    // Resets loop 
-  	                decimalChecker = 0;
-                    passChecker = -1;
-                    textDiplayCount = 0;
-                    userInputChecker = 0;
+                        if (Serial.available() > 0) {
+                        // Resets loop 
+  	                    decimalChecker = 0;
+                        passChecker = -1;
+                        textDiplayCount = 0;
+                        userInputChecker = 0;
 
                 } else if (failChecker == 1) {
                     Serial.print("\n");
