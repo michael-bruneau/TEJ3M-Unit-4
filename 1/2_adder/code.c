@@ -146,7 +146,8 @@ void loop() {
                             textDiplayCount += 1;
 
                             Serial.print("\n");
-                            Serial.print("When you are ready type any letter in the serial monitor to start a new calculation.")
+                            Serial.print("When you are ready type any letter in the serial monitor to start a new calculation.");
+                        }
 
                         if (Serial.available() > 0) {
                             // Resets loop 
@@ -154,9 +155,10 @@ void loop() {
                             passChecker = -1;
                             textDiplayCount = 0;
                             userInputChecker = 0;
-                            digitalWrite(PIN_10, LOW)
-                            digitalWrite(PIN_12, LOW)
-
+                            digitalWrite(PIN_10, LOW);
+                            digitalWrite(PIN_12, LOW);
+                        }
+                    }
                 } else if (failChecker == 1) {
                     Serial.print("\n");
                     Serial.println("Somthing went wrong. Your input was invalid please try again.");
