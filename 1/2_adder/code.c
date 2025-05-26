@@ -136,7 +136,7 @@ void loop() {
                     
                     while(passChecker >= 0) {
                         if (textDiplayCount == 1) {
-                            Serial.println("\nhe equation you have selected is ");
+                            Serial.println("\nthe equation you have selected is ");
                             Serial.print(userInputA);
                             Serial.print(" + ");
                             Serial.print(userInputB);
