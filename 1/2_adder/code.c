@@ -97,7 +97,7 @@ void loop() {
                 userInputChecker = 1;
     
                 // checks if user input was valid number
-                if ((userInputA < 2) && (userInputA > -1)) {
+                if ((userInputB < 2) && (userInputB > -1)) {
                     passChecker += 1; 
                 } else {
   	                failChecker = 1;
