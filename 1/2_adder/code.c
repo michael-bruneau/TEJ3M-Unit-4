@@ -174,6 +174,7 @@ void loop() {
                     passChecker = 0;
                     textDiplayCount = 0;
                     userInputChecker = 0;
+                    failChecker = 0;
                 }
             }	
             // resets decimal checker if user ddin't make an input
@@ -190,6 +191,7 @@ void loop() {
             passChecker = -1;
             textDiplayCount = 0;
             userInputChecker = 0;
+            failChecker = 0;
         }
     }	
   
