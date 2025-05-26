@@ -136,6 +136,7 @@ void loop() {
                     
                     while(passChecker >= 0) {
                         if (textDiplayCount == 1) {
+                            Serial.print("\n");
                             Serial.println("\nthe equation you have selected is ");
                             Serial.print(userInputA);
                             Serial.print(" + ");
@@ -143,7 +144,8 @@ void loop() {
                             Serial.print(" = ");
                             Serial.print(userInputA + userInputB);
                             textDiplayCount += 1;
-
+                            
+                            Serial.print("\n");
                             Serial.print("\nWhen you are ready type any letter in the serial monitor to start a new calculation.");
                         }
 
