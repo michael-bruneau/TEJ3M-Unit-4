@@ -157,7 +157,7 @@ void loop() {
                             userInputChecker = 0;
                             digitalWrite(PIN_10, LOW);
                             digitalWrite(PIN_12, LOW);
-                            delay(PAUSE_TIME)
+                            delay(PAUSE_TIME);
                         }
                     }
                 } else if (failChecker == 1) {
