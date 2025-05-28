@@ -2,7 +2,7 @@
   Created by: Michael Bruneau
   Created on: May 2025
 
-  This Arduino Uno program asks User for inputs for half bit adder
+  This Arduino Uno program asks User for inputs for Full Adder
 */
 
 // Variables & Constants
