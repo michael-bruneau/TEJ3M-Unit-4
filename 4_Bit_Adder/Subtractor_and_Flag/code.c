@@ -13,7 +13,7 @@ const int PIN_10 = 10;
 const int ONE = 5;
 const int ZERO = 0;
 int pinCounter = -1;
-int voltageCounter = 0;
+int voltageCounter = -1;
 int listIndex = 0;
 int PINS[] = {PIN_10, PIN_12};
 int VOLTAGE[] = {0, 5};
@@ -32,8 +32,8 @@ void setup() {
 }
 
 void loop() {
-    for (pinCounter = -1; pinCounter < 2; pinCounter++) {
-         for (voltageCounter = -1; VOLTAGE < 2; voltageCounter++) {
+    for (int pinCounter = -1; pinCounter < 2; pinCounter++) {
+         for (int voltageCounter = -1; voltageCounter < 2; voltageCounter++) {
             // set pins
             digitalWrite(PINS[pinCounter], VOLTAGE[voltageCounter]);
             delay(PAUSE_TIME);
