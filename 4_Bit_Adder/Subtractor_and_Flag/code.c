@@ -39,6 +39,8 @@ void loop() {
             // set pins
             digitalWrite(PINS[pinCounter], VOLTAGE[voltageCounter]);
             delay(PAUSE_TIME);
-        }           
+        } else {
+            digitalWrite(PINS[pinCounter], Low);
+        }         
     }
 }
