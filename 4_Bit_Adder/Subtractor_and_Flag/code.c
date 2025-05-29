@@ -2,7 +2,7 @@
   Created by: Michael Bruneau
   Created on: May 2025
 
-  This Arduino Uno program asks User for inputs for Full Adder
+  This Arduino Uno program a 1/2 Adder
 */
 
 // Variables & Constants
@@ -26,7 +26,7 @@ void setup() {
   Serial.begin(9600); // Starts the serial communication
   
   // welcome text
-  Serial.println("Welcome user!! This program is a 1/2 adder user interface.");
+  Serial.println("Welcome user!! This program is a 1/2 adder.");
   
   // pauses for 5 second
   delay(PAUSE_TIME_FOR_SETUP);
