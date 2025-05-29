@@ -10,14 +10,13 @@ const int PAUSE_TIME = 1000;
 const int PAUSE_TIME_FOR_SETUP = 5000;
 const int PIN_12 = 12;
 const int PIN_10 = 10; 
-const int PINS = {PIN_10, PIN_12};
-const int VOLTAGE = {0, 5};
 const int ONE = 5;
 const int ZERO = 0;
-int loopCounter = 0;
 int pinCounter = -1;
 int voltageCounter = 0;
 int listIndex = 0;
+int PINS = {PIN_10, PIN_12};
+int VOLTAGE = {0, 5};
 
 
 void setup() {
