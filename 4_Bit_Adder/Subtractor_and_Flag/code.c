@@ -40,7 +40,7 @@ void loop() {
             digitalWrite(PINS[pinCounter], VOLTAGE[voltageCounter]);
             delay(PAUSE_TIME);
             
-            if (voltageCounter == 2);
+            if (voltageCounter == 2) {
                 digitalWrite(PINS[pinCounter], LOW);
             }
         }         
