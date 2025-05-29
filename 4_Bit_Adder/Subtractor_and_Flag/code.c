@@ -15,8 +15,8 @@ const int ZERO = 0;
 int pinCounter = -1;
 int voltageCounter = 0;
 int listIndex = 0;
-int PINS = {PIN_10, PIN_12};
-int VOLTAGE = {0, 5};
+int PINS[] = {PIN_10, PIN_12};
+int VOLTAGE[] = {0, 5};
 
 
 void setup() {
