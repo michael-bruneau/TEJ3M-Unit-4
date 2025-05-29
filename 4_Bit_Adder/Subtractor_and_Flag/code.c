@@ -34,13 +34,11 @@ void setup() {
 }
 
 void loop() {
-    for (int loopCounter = -1; loopCounter < 4; loopCounter++) {
-        for (int pinCounter = -1; pinCounter < 2; pinCounter++) {
-            for (int voltageCounter = -1; voltageCounter < 2; voltageCounter++) {
-                // set pins
-                digitalWrite(PINS[pinCounter], VOLTAGE[voltageCounter]);
-                delay(PAUSE_TIME);
-            }   
-        }
+    for (int pinCounter = -1; pinCounter < 2; pinCounter++) {
+        for (int voltageCounter = -1; voltageCounter < 2; voltageCounter++) {
+            // set pins
+            digitalWrite(PINS[pinCounter], VOLTAGE[voltageCounter]);
+            delay(PAUSE_TIME);
+        }           
     }
 }
