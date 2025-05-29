@@ -12,13 +12,7 @@ const int PIN_12 = 12;
 const int PIN_10 = 10; 
 const int ONE = 5;
 const int ZERO = 0;
-int textDiplayCount = 0;
-int userInputA = 0;
-int userInputB = 0;
-int decimalChecker = 0; // If decimal checker equals 4 or greater user inputed a decimal
-int passChecker = -1; // Pass counter must equal one to be valid number for A and two for B
-int userInputChecker = 0;
-int failChecker = 0;
+
 
 void setup() {
   pinMode(PIN_12, OUTPUT);
