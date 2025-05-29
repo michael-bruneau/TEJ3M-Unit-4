@@ -41,7 +41,7 @@ void loop() {
             delay(PAUSE_TIME);
             
             if (voltageCounter == 2);
-                digitalWrite(PINS[pinCounter], Low);
+                digitalWrite(PINS[pinCounter], LOW);
             }
         }         
     }
