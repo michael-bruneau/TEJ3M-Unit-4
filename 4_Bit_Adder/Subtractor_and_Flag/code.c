@@ -34,8 +34,8 @@ void setup() {
 }
 
 void loop() {
-    for (int pinCounter = -1; pinCounter < 2; pinCounter++) {
-        for (int voltageCounter = -1; voltageCounter < 2; voltageCounter++) {
+    for (int pinCounter = -1; pinCounter <= 1; pinCounter++) {
+        for (int voltageCounter = -1; voltageCounter <= 1; voltageCounter++) {
             // set pins
             digitalWrite(PINS[pinCounter], VOLTAGE[voltageCounter]);
             delay(PAUSE_TIME);
