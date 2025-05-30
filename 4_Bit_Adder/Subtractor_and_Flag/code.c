@@ -29,13 +29,13 @@ void setup() {
 }
 
 void loop() {
-  for (int voltageCounterB = -1; voltageCounterB < 2; voltageCounterB++) {
+  for (int voltageCounterB = 0; voltageCounterB < 2; voltageCounterB++) {
     digitalWrite(PIN_12, VOLTAGE[voltageCounterB]);
 
-    for (int voltageCounterA = -1; voltageCounterA < 2; voltageCounterA++) {
+    for (int voltageCounterA = 0; voltageCounterA < 2; voltageCounterA++) {
       digitalWrite(PIN_10, VOLTAGE[voltageCounterA]);
-
-      if (voltageCounterA < 1) {
+	  Serial.print(voltageCounterA);
+      if (voltageCounterA < 2) {
         delay(PAUSE_TIME);
       }
     }
