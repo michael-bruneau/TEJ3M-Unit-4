@@ -2,7 +2,7 @@
   Created by: Michael Bruneau
   Created on: May 2025
 
-  This Arduino Uno program a 1/2 Adder
+  This Arduino Uno program a 2 bit Adder
 */
 
 // Variables & Constants
@@ -26,7 +26,7 @@ void setup() {
   Serial.begin(9600); // Starts the serial communication
   
   // welcome text
-  Serial.println("Welcome user!! This program is a 1/2 adder.");
+  Serial.println("Welcome user!! This program is a 2 bit adder.");
   
   // pauses for 5 second
   delay(PAUSE_TIME_FOR_SETUP);
