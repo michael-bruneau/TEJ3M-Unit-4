@@ -44,7 +44,7 @@ void loop() {
 
                 for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
                     digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
-                    if (voltageCounterA < 2) {
+                    if (voltageCounterA1 < 2) {
                         delay(PAUSE_TIME);
                     }
                 }
