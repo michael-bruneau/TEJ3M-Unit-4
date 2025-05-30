@@ -30,10 +30,10 @@ void setup() {
 
 void loop() {
   for (int voltageCounterB = -1; voltageCounterB <= 1; voltageCounterB++) {
-    digitalWrite(PIN_12, voltageCounterB);
+    digitalWrite(PIN_12, VOLTAGE[voltageCounterB]);
 
     for (int voltageCounterA = -1; voltageCounterA <= 1; voltageCounterA++) {
-      digitalWrite(PIN_10, voltageCounterA);
+      digitalWrite(PIN_10, VOLTAGE[voltageCounterA]);
 
       if (voltageCounterA < 1) {
         delay(PAUSE_TIME);
