@@ -35,7 +35,7 @@ void setup() {
 
 void loop() {
   for (int voltageCounter = -1; voltageCounter <= 1; voltageCounter++) {
-    print(loopCounter);
+    Serial.print(loopCounter);
     loopCounter += 1;
   }
 }
