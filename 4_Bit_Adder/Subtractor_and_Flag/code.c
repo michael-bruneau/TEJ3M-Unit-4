@@ -9,15 +9,10 @@
 const int PAUSE_TIME = 1000;
 const int PAUSE_TIME_FOR_SETUP = 5000;
 const int PIN_12 = 12;
-const int PIN_10 = 10; 
-const int ONE = 5;
-const int ZERO = 0;
-int pinCounter = -1;
-int voltageCounter = -1;
-int listIndex = 0;
-int loopCounter = -1;
-int PINS[] = {PIN_10, PIN_12};
-int VOLTAGE[] = {0, 5};
+const int PIN_10 = 10;
+int voltageCounterB = -1;
+int voltageCounterA = -1;
+int VOLTAGE[] = {0, 5, 0};
 
 
 
@@ -34,9 +29,16 @@ void setup() {
 }
 
 void loop() {
-  for (int voltageCounter = -1; voltageCounter <= 1; voltageCounter++) {
-    Serial.print(loopCounter);
-    loopCounter += 1;
+  for (int voltageCounterB = -1; voltageCounter <= 1; voltageCounter++) {
+    digitalWrite(PIN_12, voltageCounterB);
+
+    for (int voltageCounterA = -1; voltageCounter <= 1; voltageCounter++) {
+      igitalWrite(PIN_12, voltageCounterA);
+
+      if (voltageCounterA = 1) {
+        delay(PAUSE_TIME);
+      }
+    }
   }
 }
         
