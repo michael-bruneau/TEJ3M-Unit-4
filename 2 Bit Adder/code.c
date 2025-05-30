@@ -37,13 +37,13 @@ void loop() {
             digitalWrite(PIN_9, VOLTAGE[voltageCounterB2]);
 
         for (int voltageCounterB1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
-            digitalWrite(PIN_9, VOLTAGE[voltageCounterB1]);
+            digitalWrite(PIN_8, VOLTAGE[voltageCounterB1]);
 
             for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
-                digitalWrite(PIN_12, VOLTAGE[voltageCounterA2]);
+                digitalWrite(PIN_3, VOLTAGE[voltageCounterA2]);
 
                 for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
-                    digitalWrite(PIN_10, VOLTAGE[voltageCounterA1]);
+                    digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
                     if (voltageCounterA < 2) {
                         delay(PAUSE_TIME);
                     }
