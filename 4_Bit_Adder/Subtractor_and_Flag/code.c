@@ -12,7 +12,7 @@ const int PIN_12 = 12;
 const int PIN_10 = 10;
 int voltageCounterB = -1;
 int voltageCounterA = -1;
-int VOLTAGE[] = {0, 5, 0};
+int VOLTAGE[] = {0, 5};
 
 
 
