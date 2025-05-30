@@ -16,7 +16,6 @@ int voltageCounterB2 =  -1;
 int voltageCounterB1 = -1;
 int voltageCounterA2 = -1;
 int voltageCounterA1 = -1;
-int voltageCounterCin = -1;
 int VOLTAGE[] = {0, 5};
 
 
@@ -34,18 +33,22 @@ void setup() {
 }
 
 void loop() {
-    for (int voltageCounterCin = 0; voltageCounterCin < 2; voltageCounterCin++) {
-        digitalWrite(PIN_9, VOLTAGE[voltageCounterCin]);
+    for (int voltageCounterB2 = 0; voltageCounterB2 < 2; voltageCounterB2++) {
+            digitalWrite(PIN_9, VOLTAGE[voltageCounterB2]);
 
-        for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
-            digitalWrite(PIN_12, VOLTAGE[voltageCounterA2]);
+        for (int voltageCounterB1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
+            digitalWrite(PIN_9, VOLTAGE[voltageCounterB1]);
 
-            for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
-                digitalWrite(PIN_10, VOLTAGE[voltageCounterA1]);
-                if (voltageCounterA < 2) {
-                    delay(PAUSE_TIME);
+            for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
+                digitalWrite(PIN_12, VOLTAGE[voltageCounterA2]);
+
+                for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
+                    digitalWrite(PIN_10, VOLTAGE[voltageCounterA1]);
+                    if (voltageCounterA < 2) {
+                        delay(PAUSE_TIME);
+                    }
                 }
             }
-        }
-    }   
+        }   
+    }
 }
