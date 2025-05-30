@@ -29,10 +29,10 @@ void setup() {
 }
 
 void loop() {
-  for (int voltageCounterB = -1; voltageCounter <= 1; voltageCounter++) {
+  for (int voltageCounterB = -1; voltageCounterB <= 1; voltageCounterB++) {
     digitalWrite(PIN_12, voltageCounterB);
 
-    for (int voltageCounterA = -1; voltageCounter <= 1; voltageCounter++) {
+    for (int voltageCounterA = -1; voltageCounterA <= 1; voltageCounterA++) {
       igitalWrite(PIN_12, voltageCounterA);
 
       if (voltageCounterA < 1) {
