@@ -33,7 +33,7 @@ void loop() {
     digitalWrite(PIN_12, voltageCounterB);
 
     for (int voltageCounterA = -1; voltageCounterA <= 1; voltageCounterA++) {
-      digitalWrite(PIN_12, voltageCounterA);
+      digitalWrite(PIN_10, voltageCounterA);
 
       if (voltageCounterA < 1) {
         delay(PAUSE_TIME);
