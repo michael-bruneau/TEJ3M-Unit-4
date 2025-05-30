@@ -34,7 +34,6 @@ void loop() {
 
     for (int voltageCounterA = 0; voltageCounterA < 2; voltageCounterA++) {
       digitalWrite(PIN_10, VOLTAGE[voltageCounterA]);
-	  Serial.print(voltageCounterA);
       if (voltageCounterA < 2) {
         delay(PAUSE_TIME);
       }

@@ -12,8 +12,10 @@ const int PIN_9 = 9;
 const int PIN_8 = 8;
 const int PIN_3 = 3;
 const int PIN_2 = 2;
-int voltageCounterB = -1;
-int voltageCounterA = -1;
+int voltageCounterB2 =  -1;
+int voltageCounterB1 = -1;
+int voltageCounterA2 = -1;
+int voltageCounterA1 = -1;
 int voltageCounterCin = -1;
 int VOLTAGE[] = {0, 5};
 
@@ -35,12 +37,11 @@ void loop() {
     for (int voltageCounterCin = 0; voltageCounterCin < 2; voltageCounterCin++) {
         digitalWrite(PIN_9, VOLTAGE[voltageCounterCin]);
 
-        for (int voltageCounterB = 0; voltageCounterB < 2; voltageCounterB++) {
-            digitalWrite(PIN_12, VOLTAGE[voltageCounterB]);
+        for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
+            digitalWrite(PIN_12, VOLTAGE[voltageCounterA2]);
 
-            for (int voltageCounterA = 0; voltageCounterA < 2; voltageCounterA++) {
-                digitalWrite(PIN_10, VOLTAGE[voltageCounterA]);
-	            Serial.print(voltageCounterA);
+            for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
+                digitalWrite(PIN_10, VOLTAGE[voltageCounterA1]);
                 if (voltageCounterA < 2) {
                     delay(PAUSE_TIME);
                 }
