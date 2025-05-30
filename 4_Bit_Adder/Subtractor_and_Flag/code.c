@@ -35,7 +35,7 @@ void loop() {
     for (int voltageCounterA = -1; voltageCounter <= 1; voltageCounter++) {
       igitalWrite(PIN_12, voltageCounterA);
 
-      if (voltageCounterA = 1) {
+      if (voltageCounterA < 1) {
         delay(PAUSE_TIME);
       }
     }
