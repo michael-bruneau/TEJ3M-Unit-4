@@ -38,7 +38,7 @@ void setup() {
 
 void loop() {
     for (int voltageCounterSubtraction = 0; voltageCounterSubtraction < 2; voltageCounterSubtraction++) {
-        digitalWrite(PIN_9, VOLTAGE[voltageCounterSubtraction]);
+        digitalWrite(PIN_13, VOLTAGE[voltageCounterSubtraction]);
 
         for (int voltageCounterB2 = 0; voltageCounterB2 < 2; voltageCounterB2++) {
             digitalWrite(PIN_9, VOLTAGE[voltageCounterB2]);
