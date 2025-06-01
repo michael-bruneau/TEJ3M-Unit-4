@@ -21,7 +21,7 @@ int voltageCounterB4 = -1;
 int voltageCounterB3 = -1;
 int voltageCounterB2 =  -1;
 int voltageCounterB1 = -1;
-int voltageCounterA4; -1;
+int voltageCounterA4 = -1;
 int voltageCounterA3 = -1;
 int voltageCounterA2 = -1;
 int voltageCounterA1 = -1;
