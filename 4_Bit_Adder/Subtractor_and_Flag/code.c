@@ -67,10 +67,10 @@ void loop() {
                                 digitalWrite(PIN_4, VOLTAGE[voltageCounterA3]);
 
                                 for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
-                                    (PIN_3, VOLTAGE[voltageCounterA2]);
+                                    digitalWrite(PIN_3, VOLTAGE[voltageCounterA2]);
 
                                     for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
-                                        (PIN_2, VOLTAGE[voltageCounterA1]);
+                                        digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
                     
                                         delay(PAUSE_TIME);
                 
