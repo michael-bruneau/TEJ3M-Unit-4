@@ -14,8 +14,6 @@ int voltageCounterB = -1;
 int voltageCounterA = -1;
 int VOLTAGE[] = {0, 5};
 
-
-
 void setup() {
   pinMode(PIN_12, OUTPUT);
   pinMode(PIN_10, OUTPUT);
