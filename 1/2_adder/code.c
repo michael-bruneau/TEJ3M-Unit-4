@@ -37,7 +37,7 @@ void loop() {
       
       Serial.println(voltageCounterA);
       Serial.println(" + ");
-      Serial.println(voltageCounterB)
+      Serial.println(voltageCounterB);
 
       delay(PAUSE_TIME);
       
