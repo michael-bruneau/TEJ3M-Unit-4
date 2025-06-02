@@ -21,7 +21,7 @@ int VOLTAGE[] = {0, 5};
 void setup() {
   pinMode(PIN_12, OUTPUT);
   pinMode(PIN_10, OUTPUT);
-  pinMode(PIN_9, OUTPUT)
+  pinMode(PIN_9, OUTPUT);
   Serial.begin(9600); // Starts the serial communication
   
   // welcome text
