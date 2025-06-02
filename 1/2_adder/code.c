@@ -36,8 +36,8 @@ void loop() {
       digitalWrite(PIN_10, VOLTAGE[voltageCounterA]);
       
       Serial.println(voltageCounterA);
-      Serial.println(" + ");
-      Serial.println(voltageCounterB);
+      Serial.print(" + ");
+      Serial.print(voltageCounterB);
 
       delay(PAUSE_TIME);
       
