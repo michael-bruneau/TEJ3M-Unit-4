@@ -42,8 +42,8 @@ void loop() {
                 Serial.print(voltageCounterA);
                 Serial.print(" + ");
                 Serial.print(voltageCounterB);
-                Serial.print(" + ")
-                Serial.print(voltageCounterCin)
+                Serial.print(" + ");
+                Serial.print(voltageCounterCin);
                 Serial.println("\n");
                 
                 delay(PAUSE_TIME);
