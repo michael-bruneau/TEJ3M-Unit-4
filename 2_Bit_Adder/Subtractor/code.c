@@ -39,27 +39,27 @@ void loop() {
     for (int voltageCounterSubtraction = 0; voltageCounterSubtraction < 2; voltageCounterSubtraction++) {
         digitalWrite(PIN_13, VOLTAGE[voltageCounterSubtraction]);
 
-        for (int voltageCounterB2 = 0; voltageCounterB2 < 2; voltageCounterB2++) {
+        for (int voltageCounterA2 = 0; voltageCounterB2 < 2; voltageCounterB2++) {
             digitalWrite(PIN_9, VOLTAGE[voltageCounterB2]);
 
-            for (int voltageCounterB1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
+            for (int voltageCounterA1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
                 digitalWrite(PIN_8, VOLTAGE[voltageCounterB1]);
 
-                for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
+                for (int voltageCounterB2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
                     digitalWrite(PIN_3, VOLTAGE[voltageCounterA2]);
 
-                    for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
+                    for (int voltageCounterB1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
                         digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
                         
-                        Serial.print(voltageCounterB2);
-                        Serial.print(voltageCounterB1);
+                        Serial.print(voltageCounterA2);
+                        Serial.print(voltageCounterA1);
                         if (voltageCounterSubtraction == 1) {
                             Serial.print(" - ");
                         } else {
                             Serial.print(" + ");
                         }
-                        Serial.print(voltageCounterA2);
-                        Serial.print(voltageCounterA1);
+                        Serial.print(voltageCounterB2);
+                        Serial.print(voltageCounterB1);
                         Serial.println("\n");
                         delay(PAUSE_TIME);
                     }
