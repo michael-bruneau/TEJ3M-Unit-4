@@ -18,20 +18,18 @@ int voltageCounterA2 = -1;
 int voltageCounterA1 = -1;
 int VOLTAGE[] = {0, 5};
 
-
-
 void setup() {
-  pinMode(PIN_9, OUTPUT);
-  pinMode(PIN_8, OUTPUT);
-  pinMode(PIN_2, OUTPUT);
-  pinMode(PIN_3, OUTPUT);
-  Serial.begin(9600); // Starts the serial communication
+    pinMode(PIN_9, OUTPUT);
+    pinMode(PIN_8, OUTPUT);
+    pinMode(PIN_2, OUTPUT);
+    pinMode(PIN_3, OUTPUT);
+    Serial.begin(9600); // Starts the serial communication
   
-  // welcome text
-  Serial.println("Welcome user!! This program is a 2 bit adder.");
+    // welcome text
+    Serial.println("Welcome user!! This program is a 2 bit adder.");
   
-  // pauses for 5 second
-  delay(PAUSE_TIME_FOR_SETUP);
+    // pauses for 5 second
+    delay(PAUSE_TIME_FOR_SETUP);
 }
 
 void loop() {
@@ -46,6 +44,13 @@ void loop() {
 
                 for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
                     digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
+                    
+                    Serial.print(voltageCounterB2);
+                    Serial.print(voltageCounterB1);
+                    Serial.print(" + ");
+                    Serial.print(voltageCounterA2);
+                    Serial.print(voltageCounterA1);
+                    Serial.println("\n");
                     
                     delay(PAUSE_TIME);
                 
