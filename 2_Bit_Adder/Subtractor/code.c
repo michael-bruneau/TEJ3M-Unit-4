@@ -29,7 +29,7 @@ void setup() {
   Serial.begin(9600); // Starts the serial communication
   
   // welcome text
-  Serial.println("Welcome user!! This program is a 2 bit adder/subtractor")
+  Serial.println("Welcome user!! This program is a 2 bit adder/subtractor");
   
   // pauses for 5 second
   delay(PAUSE_TIME_FOR_SETUP);
