@@ -6,7 +6,7 @@
 */
 
 // Variables & Constants
-const int PAUSE_TIME = 1000;
+const int PAUSE_TIME = 2000;
 const int PAUSE_TIME_FOR_SETUP = 5000;
 const int PIN_9 = 9;
 const int PIN_8 = 8;
