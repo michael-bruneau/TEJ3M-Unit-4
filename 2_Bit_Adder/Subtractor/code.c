@@ -54,7 +54,7 @@ void loop() {
                         Serial.print(voltageCounterB2);
                         Serial.print(voltageCounterB1);
                         if (voltageCounterSubtraction == 1) {
-                            Serial.print(" - ")
+                            Serial.print(" - ");
                         } else {
                             Serial.print(" + ");
                         }
