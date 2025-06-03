@@ -40,16 +40,16 @@ void loop() {
         digitalWrite(PIN_13, VOLTAGE[voltageCounterSubtraction]);
 
         for (int voltageCounterA2 = 0; voltageCounterB2 < 2; voltageCounterB2++) {
-            digitalWrite(PIN_9, VOLTAGE[voltageCounterB2]);
+            digitalWrite(PIN_3, VOLTAGE[voltageCounterB2]);
 
             for (int voltageCounterA1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
-                digitalWrite(PIN_8, VOLTAGE[voltageCounterB1]);
+                digitalWrite(PIN_2, VOLTAGE[voltageCounterB1]);
 
                 for (int voltageCounterB2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
-                    digitalWrite(PIN_3, VOLTAGE[voltageCounterA2]);
+                    digitalWrite(PIN_9, VOLTAGE[voltageCounterA2]);
 
                     for (int voltageCounterB1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
-                        digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
+                        digitalWrite(PIN_8, VOLTAGE[voltageCounterA1]);
                         
                         Serial.print(voltageCounterA2);
                         Serial.print(voltageCounterA1);
