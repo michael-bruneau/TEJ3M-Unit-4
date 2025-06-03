@@ -18,6 +18,12 @@ int voltageCounterB1 = -1;
 int voltageCounterA2 = -1;
 int voltageCounterA1 = -1;
 int voltageCounterSubtraction = -1;
+int voltageCounterA1Reversed = -1;
+int voltageCounterA2Reversed = -1;
+int voltageCounterB1Reversed = -1;
+int voltageCounterB2Reversed = -1;
+int aValue = -1;
+int bValue = -1;
 int VOLTAGE[] = {0, 5};
 
 
@@ -51,7 +57,21 @@ void loop() {
 
                     for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
                         digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
-                    
+                        
+                        if (voltageCounterA2 == 0) {
+                            aValue = (2 * voltageCounterA2 + 1 * voltageCounterA1);
+                        } else {
+                            if (voltageCounterA1 == 0) {
+                                voltageCounterA1Reversed = 1;
+                            } else {
+                                voltageCounterA1Reversed = 0;
+                            }
+
+                            if (voltageCounterA2 == 0) {
+                                voltageCounterA2Reversed = 1;
+                            } else
+                        } 
+
                         delay(PAUSE_TIME);
                 
                     }
