@@ -6,7 +6,7 @@
 */
 
 // Variables & Constants
-const int PAUSE_TIME = 4000;
+const int PAUSE_TIME = 8000;
 const int PAUSE_TIME_FOR_SETUP = 5000;
 const int PIN_13 = 13;
 const int PIN_9 = 9;
@@ -23,6 +23,7 @@ int VOLTAGE[] = {0, 5};
 
 void setup() {
   pinMode(PIN_9, OUTPUT);
+  pinMode(PIN_13, OUTPUT);
   pinMode(PIN_8, OUTPUT);
   pinMode(PIN_2, OUTPUT);
   pinMode(PIN_3, OUTPUT);
