@@ -28,6 +28,7 @@ void setup() {
     pinMode(PIN_8, OUTPUT);
     pinMode(PIN_2, OUTPUT);
     pinMode(PIN_3, OUTPUT);
+    pinMode(PIN_10, OUTPUT);
     Serial.begin(9600); // Starts the serial communication
   
     // welcome text
