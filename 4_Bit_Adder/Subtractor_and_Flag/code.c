@@ -53,29 +53,29 @@ void loop() {
     for (int voltageCounterSubtraction = 0; voltageCounterSubtraction < 2; voltageCounterSubtraction++) {
         digitalWrite(PIN_13, VOLTAGE[voltageCounterSubtraction]);
 
-        for (int voltageCounterB4 = 0; voltageCounterB4 < 2; voltageCounterB4++) {
-            digitalWrite(PIN_11, VOLTAGE[voltageCounterB4]);
+        for (int voltageCounterA4 = 0; voltageCounterA4 < 2; voltageCounterA4++) {
+            digitalWrite(PIN_5, VOLTAGE[voltageCounterA4]);
 
-            for (int voltageCounterB3 = 0; voltageCounterB3 < 2; voltageCounterB3++) {
-                digitalWrite(PIN_10, VOLTAGE[voltageCounterB3]);
+            for (int voltageCounterA3 = 0; voltageCounterA3 < 2; voltageCounterA3++) {
+                digitalWrite(PIN_4, VOLTAGE[voltageCounterA3]);
 
-                for (int voltageCounterB2 = 0; voltageCounterB2 < 2; voltageCounterB2++) {
-                    digitalWrite(PIN_9, VOLTAGE[voltageCounterB2]);
+                for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
+                    digitalWrite(PIN_3, VOLTAGE[voltageCounterA2]);
 
-                    for (int voltageCounterB1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
-                        digitalWrite(PIN_8, VOLTAGE[voltageCounterB1]);
+                    for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
+                        digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
                 
-                        for (int voltageCounterA4 = 0; voltageCounterA4 < 2; voltageCounterA4++) {
-                            digitalWrite(PIN_5, VOLTAGE[voltageCounterA4]);
+                        for (int voltageCounterB4 = 0; voltageCounterB4 < 2; B++) {
+                            digitalWrite(PIN_11, VOLTAGE[voltageCounterB4]);
 
-                            for (int voltageCounterA3 = 0; voltageCounterA3 < 2; voltageCounterA3++) {
-                                digitalWrite(PIN_4, VOLTAGE[voltageCounterA3]);
+                            for (int voltageCounterB3 = 0; voltageCounterB3 < 2; voltageCounterB3++) {
+                                digitalWrite(PIN_10, VOLTAGE[voltageCounterB3]);
 
-                                for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
-                                    digitalWrite(PIN_3, VOLTAGE[voltageCounterA2]);
+                                for (int voltageCounterB2 = 0; voltageCounterB2 < 2; voltageCounterB2++) {
+                                    digitalWrite(PIN_9, VOLTAGE[voltageCounterB2]);
 
                                     for (int voltageCounterB1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
-                                        digitalWrite(PIN_8, VOLTAGE[voltageCounterA1]);
+                                        digitalWrite(PIN_8, VOLTAGE[voltageCounterB1]);
                                         
                                         Serial.print(voltageCounterA4);
                                         Serial.print(voltageCounterA3);
