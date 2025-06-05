@@ -42,33 +42,42 @@ void setup() {
 }
 
 void loop() {
-    for (int voltageCounterA3 = 0; voltageCounterA3 < 2; voltageCounterA3++) {
-        digitalWrite(PIN_13, VOLTAGE[voltageCounterA3]);
+    for (int voltageCounterSubtractor = 0; voltageCounterSubtractor < 2; voltageCounterSubtractor++) {
+        digitalWrite(PIN_13, VOLTAGE[voltageCounterSubtractor]);
 
-        for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
-            digitalWrite(PIN_3, VOLTAGE[voltageCounterA2]);
+        for (int voltageCounterA3 = 0; voltageCounterA3 < 2; voltageCounterA3++) {
+            digitalWrite(PIN_4, VOLTAGE[voltageCounterA3]);
 
-            for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
-                digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
+            for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
+                digitalWrite(PIN_3, VOLTAGE[voltageCounterA2]);
+
+                for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
+                    digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
                    
-                for (int voltageCounterB3 = 0; voltageCounterB3 < 2; voltageCounterB3++) {
-                    digitalWrite(PIN_10, VOLTAGE[voltageCounterB3]);
+                    for (int voltageCounterB3 = 0; voltageCounterB3 < 2; voltageCounterB3++) {
+                        digitalWrite(PIN_10, VOLTAGE[voltageCounterB3]);
 
-                    for (int voltageCounterB2 = 0; voltageCounterB2 < 2; voltageCounterB2++) {
-                        digitalWrite(PIN_9, VOLTAGE[voltageCounterB2]);
+                        for (int voltageCounterB2 = 0; voltageCounterB2 < 2; voltageCounterB2++) {
+                            digitalWrite(PIN_9, VOLTAGE[voltageCounterB2]);
 
-                        for (int voltageCounterB1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
-                            digitalWrite(PIN_8, VOLTAGE[voltageCounterB1]);
+                            for (int voltageCounterB1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
+                                digitalWrite(PIN_8, VOLTAGE[voltageCounterB1]);
                             
-                            Serial.print(voltageCounterA3);
-                            Serial.print(voltageCounterA2);
-                            Serial.print(voltageCounterA1);
-                            Serial.print(" + ");
-                            Serial.print(voltageCounterB3);
-                            Serial.print(voltageCounterB2);
-                            Serial.print(voltageCounterB1);
-                            Serial.println("\n");
-                            delay(PAUSE_TIME);
+                                Serial.print(voltageCounterA3);
+                                Serial.print(voltageCounterA2);
+                                Serial.print(voltageCounterA1);
+                                if (voltageCounterSubtractor == 0) {
+                                    Serial.print(" + ");
+                                } else {
+                                    Serial.print(" - ");
+                                }
+
+                                Serial.print(voltageCounterB3);
+                                Serial.print(voltageCounterB2);
+                                Serial.print(voltageCounterB1);
+                                Serial.println("\n");
+                                delay(PAUSE_TIME);
+                            }
                         }
                     }
                 }
