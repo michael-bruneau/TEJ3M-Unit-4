@@ -31,10 +31,15 @@ int VOLTAGE[] = {0, 5};
 
 
 void setup() {
-  pinMode(PIN_9, OUTPUT);
-  pinMode(PIN_8, OUTPUT);
-  pinMode(PIN_2, OUTPUT);
-  pinMode(PIN_3, OUTPUT);
+    pinMode(PIN_13, OUTPUT);
+    pinMode(PIN_11, OUTPUT);
+    pinMode(PIN_9, OUTPUT);
+    pinMode(PIN_10, OUTPUT);
+    pinMode(PIN_5, OUTPUT);
+    pinMode(PIN_4, OUTPUT);
+    pinMode(PIN_8, OUTPUT);
+    pinMode(PIN_2, OUTPUT);
+    pinMode(PIN_3, OUTPUT);
   Serial.begin(9600); // Starts the serial communication
   
   // welcome text
@@ -69,8 +74,19 @@ void loop() {
                                 for (int voltageCounterA2 = 0; voltageCounterA2 < 2; voltageCounterA2++) {
                                     digitalWrite(PIN_3, VOLTAGE[voltageCounterA2]);
 
-                                    for (int voltageCounterA1 = 0; voltageCounterA1 < 2; voltageCounterA1++) {
-                                        digitalWrite(PIN_2, VOLTAGE[voltageCounterA1]);
+                                    for (int voltageCounterB1 = 0; voltageCounterB1 < 2; voltageCounterB1++) {
+                                        digitalWrite(PIN_8, VOLTAGE[voltageCounterA1]);
+                                        
+                                        Serial.print(voltageCounterA4);
+                                        Serial.print(voltageCounterA3);
+                                        Serial.print(voltageCounterA2);
+                                        Serial.print(voltageCounterA1);
+                                        Serial.print(" + ");
+                                        Serial.print(voltageCounterB4);
+                                        Serial.print(voltageCounterB3);
+                                        Serial.print(voltageCounterB2);
+                                        Serial.print(voltageCounterB1);
+                                        Serial.println("\n");
                     
                                         delay(PAUSE_TIME);
                 
