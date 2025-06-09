@@ -6,7 +6,7 @@
 */
 
 // Variables & Constants
-const int PAUSE_TIME = 1000;
+const int PAUSE_TIME = 8000;
 const int PAUSE_TIME_FOR_SETUP = 5000;
 const int PIN_13 = 13;
 const int PIN_11 = 11;
@@ -50,8 +50,8 @@ void setup() {
 }
 
 void loop() {
-    for (int voltageCounterSubtraction = 0; voltageCounterSubtraction < 2; voltageCounterSubtraction++) {
-        digitalWrite(PIN_13, VOLTAGE[voltageCounterSubtraction]);
+    //for (int voltageCounterSubtraction = 0; voltageCounterSubtraction < 2; voltageCounterSubtraction++) {
+       // digitalWrite(PIN_13, VOLTAGE[voltageCounterSubtraction]);
 
         for (int voltageCounterA4 = 0; voltageCounterA4 < 2; voltageCounterA4++) {
             digitalWrite(PIN_5, VOLTAGE[voltageCounterA4]);
