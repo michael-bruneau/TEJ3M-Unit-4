@@ -82,7 +82,7 @@ void loop() {
                                         Serial.print(voltageCounterA2);
                                         Serial.print(voltageCounterA1);
                                         if (voltageCounterSubtraction == 1) {
-                                            Serial.print(" - ")
+                                            Serial.print(" - ");
                                         } else {
                                             Serial.print(" + ");
                                         }
